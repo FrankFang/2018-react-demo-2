@@ -1,0 +1,39 @@
+.button2 {
+  box-sizing: border-box;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(153, 153, 153, 1);
+  border-radius: 4px;
+  padding: 4px 1em;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.button2:focus {
+  outline: none;
+  border-color: black;
+}
+.button2 > .circle {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background: red;
+  opacity: 0.5;
+  display: inline-block;
+  animation: 1s big forwards;
+  position: absolute;
+  z-index: 0;
+}
+.button2 > .value {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
